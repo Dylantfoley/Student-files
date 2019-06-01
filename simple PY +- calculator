@@ -1,0 +1,22 @@
+print("Welcome!\nType\"exit\" to quit")
+operator = input("> ")
+valid = True
+while operator != "exit":
+    if operator != '+' and operator != '-':
+        print("[Invalid Operator]")
+        valid = False
+    else:
+        valid = True
+        
+    if valid:
+        operand_1 = int(input("operand 1: "))
+        operand_2 = int(input("operand 2: "))
+
+        if operator == '+' :
+            print('=>', operand_1 + operand_2)
+        elif operator == '-' :
+            print('=>', operand_1 - operand_2)
+
+    operator = input("> ")
+    
+print("Bye!")
